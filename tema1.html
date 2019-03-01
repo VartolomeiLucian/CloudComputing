@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.btn-group .button {
+	  background-color: #4CAF50; 
+	  border: 1px solid green;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  cursor: pointer;
+	  width: 400px;
+	  height: 100px;
+	  display: block;
+	}
+
+	.btn-group .button:not(:last-child) {
+	  border-bottom: none; 
+	}
+
+	.btn-group .button:hover {
+	  background-color: #3e8e41;
+	}
+	</style>
+
+	<script type="text/javascript" src="tema1.js"></script>
+
+</head>
+
+<body>
+	<h2 align="center">Tema 1 - Cloud Computing</h2>
+	<div align="center" class="btn-group">
+	  <button onclick="myFunction1()" type="submit" class="button">City-WS</button>
+	  <button class="button">Forecast-WS</button>
+	  <button class="button">MD5-WS</button>
+	  <button class="button">Metrics</button>
+	  <button class="button">Concurrent-Requests</button>
+	</div>
+
+<script type="text/javascript">
+	function myFunction1(){
+		location.replace("http://localhost:8082/city")
+		var btn = document.createElement("button");
+		var t = document.creatTextNode("Back")
+		btn.appendChild(t)
+		document.body.appendChild;
+	}	
+
+</script>
+
+</body>
+</html>

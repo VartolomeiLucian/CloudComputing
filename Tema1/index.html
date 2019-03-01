@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .btn-group .button {
+            background-color: #4CAF50;
+            border: 1px solid green;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            width: 400px;
+            height: 100px;
+            display: block;
+        }
+
+        .btn-group .button:not(:last-child) {
+            border-bottom: none;
+        }
+
+        .btn-group .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+
+</head>
+
+<body>
+<h2 align="center">Tema 1 - Cloud Computing</h2>
+<div align="center" class="btn-group">
+    <button onclick="myFunction1()" type="submit" class="button">City-WS</button>
+    <button onclick="myFunction2()" type="submit" class="button">Forecast-WS</button>
+    <button onclick="myFunction3()" type="submit"class="button">MD5-WS</button>
+    <button onclick="myFunction4()" type="submit"class="button">Metrics</button>
+    <button onclick="myFunction5()" type="submit"class="button">Concurrent-Requests</button>
+</div>
+
+<script type="text/javascript">
+    function myFunction1() {
+        window.location.pathname = '/city';
+    }
+
+    function myFunction2() {
+        window.location.pathname = '/forecast';
+    }
+
+    function myFunction3() {
+        window.location.pathname = '/md5';
+    }
+
+    function myFunction4() {
+        window.location.pathname = '/metrics';
+    }
+
+    function myFunction5() {
+        window.location.pathname = '/concurrent_requests';
+    }
+
+
+</script>
+
+</body>
+</html>
