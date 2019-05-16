@@ -7,7 +7,6 @@ import random
 from flask import Flask, app, jsonify
 from azure.cognitiveservices.search.imagesearch import ImageSearchAPI
 from azure.cognitiveservices.search.websearch import WebSearchAPI
-from azure.cognitiveservices.search.websearch.models import SafeSearch
 from msrest.authentication import CognitiveServicesCredentials
 
 app = Flask(__name__)
@@ -116,6 +115,6 @@ def server_error(e):
     See logs for full stacktrace.
     """.format(e), 500
 
-# if __name__ == '__main__':
-#     app.run(host='127.0.0.1', port=8080, debug=True)
-# # [END gae_flex_quickstart]
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=8083, debug=True)
+# [END gae_flex_quickstart]
